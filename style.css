@@ -294,6 +294,7 @@ footer{
   text-align: center;
   margin: 1.25rem;
   color: #617D98;
+  z-index: -1;
 }
 
 footer a{
@@ -320,6 +321,10 @@ footer a{
   border-radius: 6px;
   margin: auto;
   margin-bottom: 5rem;
+}
+
+.reviews-inner {
+  background-color: rgba(241, 245, 248, 1);
 }
 
 .reviews-inner img{
@@ -425,4 +430,82 @@ footer a{
   color: #c59d5f;
   font-family: "Great Vibes", cursive;
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+.faq-inner{
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 620px;
+  background-color: rgba(241, 245, 248, 1);
+}
+
+@media screen and (min-width: 992px) {
+  .faq-inner {
+    width: 95vw;
+  }
+}
+
+.question {
+  background: #fff;
+  border-radius: .5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.question-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: capitalize;
+  padding-bottom: 1rem;
+}
+
+.question-title p {
+  margin-bottom: 0;
+  letter-spacing: .25rem;
+  color: #102A42;
+}
+
+.question-btn {
+  font-size: 1.5rem;
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+  color: #c59d5f;
+  transition: all 0.3s linear;
+}
+
+.question-btn:hover {
+  transform: rotate(90deg);
+}
+
+.question-text {
+  padding: 1rem 0 1.5rem 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.question-text p {
+  margin-bottom: 0;
+}
+
+.question-text {
+  display: none;
+}
+
+.show-text .question-text {
+  display: block;
+}
+
+.minus-icon {
+  display: none;
+}
+
+.show-text .minus-icon {
+  display: inline;
+}
+
+.show-text .plus-icon {
+  display: none;
 }
