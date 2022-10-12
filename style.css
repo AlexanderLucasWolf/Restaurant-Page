@@ -40,6 +40,12 @@ ul {
   text-align: center;
   letter-spacing: 1px;
   margin-right: .8rem;
+  font-weight: lighter;
+}
+
+.navbar-name:hover{
+  cursor: pointer;
+  font-weight: bolder;
 }
 
 .navbar-header {
